@@ -1,13 +1,11 @@
 package izan.springframework.petclinic.model;
 
-public abstract class Person {
+public abstract class Person extends BaseEntity{
 
     private String name;
     private String lastName;
 
-    private String getName() {
-        return name;
-    }
+    private String getName() { return name; }
 
     private void setName(String name) {
         this.name = name;
