@@ -1,21 +1,27 @@
 package izan.springframework.petclinic.model;
 
-public abstract class Person extends BaseEntity{
+import javax.persistence.Column;
+import javax.persistence.MappedSuperclass;
 
-    private String name;
+@MappedSuperclass
+public class Person extends BaseEntity{
+
+    @Column(name = "first_name")
     private String lastName;
+    @Column(name = "last_name")
+    private String firstName;
 
-    private String getName() { return name; }
-
-    private void setName(String name) {
-        this.name = name;
+    public String getLastName() {
+         return lastName;
     }
 
-    private String getLastName() {
-        return lastName;
+    public String getFirstName(){
+        return firstName;
     }
 
-    private void setLastName(String lastName) {
+    public void setLastName(String lastName) {
         this.lastName = lastName;
     }
+
+    public void setFirstName(String firstName){ this.firstName = firstName; }
 }
