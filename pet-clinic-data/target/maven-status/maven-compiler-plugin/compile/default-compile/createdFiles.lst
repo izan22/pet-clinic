@@ -1,5 +1,14 @@
-izan\springframework\petclinic\model\Pet.class
-izan\springframework\petclinic\model\Person.class
 izan\springframework\petclinic\model\Owner.class
-izan\springframework\petclinic\model\Vet.class
+izan\springframework\petclinic\model\BaseEntity.class
+izan\springframework\petclinic\services\CrudService.class
+izan\springframework\petclinic\services\OwnerService.class
+izan\springframework\petclinic\services\PetService.class
+izan\springframework\petclinic\services\VetService.class
+izan\springframework\petclinic\model\Pet.class
+izan\springframework\petclinic\services\map\OwnerMapService.class
 izan\springframework\petclinic\model\PetType.class
+izan\springframework\petclinic\model\Person.class
+izan\springframework\petclinic\services\map\PetMapService.class
+izan\springframework\petclinic\model\Vet.class
+izan\springframework\petclinic\services\map\VetMapService.class
+izan\springframework\petclinic\services\map\AbstractMapService.class

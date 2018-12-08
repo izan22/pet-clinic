@@ -1,1 +1,5 @@
 izan\springframework\petclinic\PetClinicApplication.class
+izan\springframework\petclinic\controllers\IndexController.class
+izan\springframework\petclinic\bootstrap\DataLoader.class
+izan\springframework\petclinic\controllers\VetController.class
+izan\springframework\petclinic\controllers\OwnerController.class

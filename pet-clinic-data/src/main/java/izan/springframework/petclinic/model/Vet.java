@@ -1,6 +1,10 @@
 package izan.springframework.petclinic.model;
 
+import java.util.Set;
+
 public class Vet extends Person {
+
+    private Set<Specialty> specialties;
 
     @Override
     public Long getId() {
@@ -30,5 +34,13 @@ public class Vet extends Person {
     @Override
     public void setFirstName(String firstName) {
         super.setFirstName(firstName);
+    }
+
+    public Set<Specialty> getSpecialties() {
+        return specialties;
+    }
+
+    public void setSpecialties(Set<Specialty> specialties) {
+        this.specialties = specialties;
     }
 }
