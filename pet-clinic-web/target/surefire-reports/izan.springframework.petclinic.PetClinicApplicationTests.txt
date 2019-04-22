@@ -1,4 +1,30 @@
 -------------------------------------------------------------------------------
 Test set: izan.springframework.petclinic.PetClinicApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.076 s - in izan.springframework.petclinic.PetClinicApplicationTests
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 8.919 s <<< FAILURE! - in izan.springframework.petclinic.PetClinicApplicationTests
+contextLoads on contextLoads(izan.springframework.petclinic.PetClinicApplicationTests)(izan.springframework.petclinic.PetClinicApplicationTests)  Time elapsed: 0.208 s  <<< FAILURE!
+org.mockito.exceptions.base.MockitoException: 
+
+Mockito cannot mock this class: interface java.util.List.
+
+Mockito can only mock non-private & non-final classes.
+If you're not sure why you're getting this error, please report to the mailing list.
+
+
+Java               : 1.8
+JVM vendor name    : Oracle Corporation
+JVM vendor version : 25.181-b13
+JVM name           : Java HotSpot(TM) 64-Bit Server VM
+JVM version        : 1.8.0_181-b13
+JVM info           : mixed mode
+OS name            : Windows 10
+OS version         : 10.0
+
+
+Underlying exception : java.lang.IllegalArgumentException: Could not create type
+	at izan.springframework.petclinic.PetClinicApplicationTests.contextLoads(PetClinicApplicationTests.java:19)
+Caused by: java.lang.IllegalArgumentException: Could not create type
+	at izan.springframework.petclinic.PetClinicApplicationTests.contextLoads(PetClinicApplicationTests.java:19)
+Caused by: java.lang.NoSuchMethodError: net.bytebuddy.dynamic.loading.MultipleParentClassLoader$Builder.appendMostSpecific(Ljava/util/Collection;)Lnet/bytebuddy/dynamic/loading/MultipleParentClassLoader$Builder;
+	at izan.springframework.petclinic.PetClinicApplicationTests.contextLoads(PetClinicApplicationTests.java:19)
+

@@ -1,8 +1,11 @@
 package izan.springframework.petclinic.model;
 
 
+import lombok.Data;
+
 import javax.persistence.*;
 
+@Data
 @Entity
 @Table(name = "types")
 public class PetType extends BaseEntity{
@@ -11,11 +14,4 @@ public class PetType extends BaseEntity{
     private String name;
 
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 }
