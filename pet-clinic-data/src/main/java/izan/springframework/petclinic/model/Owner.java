@@ -19,6 +19,8 @@ public class Owner extends Person {
     @Column(name = "address")
     private String address;
 
+    private String changeOneCommit;
+
     @Column(name = "city")
     private String city;
 
