@@ -1,2 +1,2 @@
 # pet-clinic
-Pet Clinic
+Just Spring Tutorial
